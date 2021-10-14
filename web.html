@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- 슬릭 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+
+    <!-- <script>
+            $('.box-1 > .slick-slider').slick();
+    </script> -->
+
+    <!-- html보다 script가 위에있으면 실행이 제대로 되지않는다. 고로 script는 body젤 밑에 써준다. -->
+    
+
+    <style>
+
+        body, ul, li{
+            margin: 0;
+            
+        }
+        .box-1 > .slick-slider .item  img {
+            width: 100%;
+            display: block;
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="box-1">
+        <div class="slick-slider">
+            <div class="item"><img src="/20210406127864.png" alt=""></div>
+            <div class="item"><img src="/20210407112574.jpg" alt=""></div>
+            <div class="item"><img src="/20210407526471.jpg" alt=""></div>
+
+        </div>
+
+
+
+    </div>
+
+    <script>
+        $('.box-1 > .slick-slider').slick();
+    </script>
+
+
+</body>
+
+</html>
