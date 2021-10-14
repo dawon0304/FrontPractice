@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- 제이쿼리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- 슬릭 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+
+
+    <link rel="stylesheet" href="hml.css">
+
+
+</head>
+
+
+
+<body>
+    <div class="slider-box-1">
+        <div class="slick">
+
+            <div class="item" style="background-color: red;">
+                <div class="bg" style="background-image:url(https://i.pinimg.com/236x/20/81/43/208143dcc6476280a0caa4feefbc43fb.jpg);"></div>
+            </div>
+
+            <div class="item" style="background-color: green;">
+                <div class="bg" style="background-image:url(https://i.pinimg.com/564x/ca/b3/d0/cab3d0bb31baa6bbd47df212eba4e256.jpg);"></div>
+            </div>
+
+            <div class="item" style="background-color: blue;">
+                <div class="bg" style="background-image:url(https://i.pinimg.com/236x/ff/25/49/ff25490d801b7bbeb0159d7947da107d.jpg);"></div>
+            </div>
+
+            <div class="item" style="background-color: yellow;">
+                <div class="bg" style="background-image: url(https://i.pinimg.com/236x/bc/03/90/bc0390db8cc2afa436cfae0dedd35c6c.jpg);" ></div>
+            </div>
+
+            <div class="item" style="background-color: black;">
+                <div class="bg" style="background-image: url(https://i.pinimg.com/236x/c0/69/07/c069076e0cdaa08458f687bbbda522f9.jpg);"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $('.slider-box-1 > .slick').slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1
+        });
+
+        
+    </script>
+
+</body>
+
+</html>
