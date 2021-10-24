@@ -7,6 +7,15 @@
     /* font */
 
     font-family: 'Roboto', sans-serif;
+    --font-large: 48px;
+    --font-medium:28px;
+    --font-regular:18px;
+    --font-small:10px;
+    
+    --weight-bold:700;
+    --weight-semi-bold:600;
+    --weight-regular:400;
+    --weight-thin:200
 
 }
 
@@ -31,7 +40,7 @@ li {
 
 .topBar>.logo {
     width: 84px;
-    padding-left: 25px;
+    padding-left: 40px;
     padding-top: 10px;
     cursor: pointer;
 
@@ -44,51 +53,64 @@ li {
 
 
 .topBar>.menue {
-    width: 850px;
-    background-color: forestgreen;
-    margin-left: 300px;
+    width: 100%;
+    margin-left: 400px;
+    display: flex;
 
 
 }
 
 .topBar>.menue>.textMenue {
+    width: 700px;
     display: flex;
-    margin: auto;
+    margin: 0;
+}
+
+.topBar>.menue>.iconMenue{
+    width: 300px;
+    margin-left: 40px;
+    position: relative;
+    margin-top: 18px;
+    display: flex;
+}
+
+.topBar>.menue>.textMenue>p{
+    font-weight: var(--weight-semi-bold);
 }
 
 .topBar>.menue>.textMenue>li {
-    margin-top: 13px;
+    margin-top: 16px;
     margin-bottom: 13px;
+    
 }
 
-.topBar>.menue>.textMenue>p:hover::after {
+.topBar>.menue>.textMenue li:hover{
     cursor: pointer;
+    font-size:large;
+}
+
+.topBar>.menue>.iconMenue i{
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.topBar>.menue>.iconMenue i:hover{
+    cursor: pointer;
+    
+}
+
+/* top bar 끝 */
+
+/* main Slide 시작 */
+
+.main{
+    height: 600px;
+    background-color: aqua;
+}
+
+.main>.slide{
+    display: flex;
 
 }
 
 
-
-.topBar>.menue>.textMenue>p::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: #000;
-    -webkit-transform: scaleY(.3);
-    transform: scaleY(.3);
-    opacity: 0;
-    transition: all .3s
-}
-
-.topBar>.menue>.textMenue>p:hover::before {
-    opacity: 1;
-    background-color: #fff;
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
-    transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity;
-}
