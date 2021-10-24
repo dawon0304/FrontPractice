@@ -8,15 +8,14 @@
 
     font-family: 'Roboto', sans-serif;
     --font-large: 48px;
-    --font-medium:28px;
-    --font-regular:18px;
-    --font-small:10px;
-    
-    --weight-bold:700;
-    --weight-semi-bold:600;
-    --weight-regular:400;
-    --weight-thin:200
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 10px;
 
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+    --weight-thin: 200
 }
 
 ul,
@@ -34,7 +33,7 @@ li {
 .topBar {
     width: 100%;
     height: 50px;
-    background-color: var(--color-light-grey);
+    background-color: var(--color-white);
     display: flex;
 }
 
@@ -66,51 +65,102 @@ li {
     margin: 0;
 }
 
-.topBar>.menue>.iconMenue{
-    width: 300px;
-    margin-left: 40px;
+.topBar>.menue>.iconMenue {
     position: relative;
     margin-top: 18px;
     display: flex;
 }
 
-.topBar>.menue>.textMenue>p{
+.topBar>.menue>.iconMenue>.icon {
+    margin-left: 40px;
+}
+
+.topBar>.menue>.textMenue>p {
     font-weight: var(--weight-semi-bold);
 }
 
 .topBar>.menue>.textMenue>li {
     margin-top: 16px;
     margin-bottom: 13px;
-    
+
 }
 
-.topBar>.menue>.textMenue li:hover{
+.topBar>.menue>.textMenue li:hover {
     cursor: pointer;
-    font-size:large;
+    font-size: large;
 }
 
-.topBar>.menue>.iconMenue i{
+.topBar>.menue>.iconMenue i {
     justify-content: space-between;
     margin-right: 15px;
 }
 
-.topBar>.menue>.iconMenue i:hover{
+.topBar>.menue>.iconMenue i:hover {
     cursor: pointer;
-    
+
 }
 
 /* top bar 끝 */
 
 /* main Slide 시작 */
 
-.main{
-    height: 600px;
+.main {
+    
     background-color: aqua;
 }
 
-.main>.slide{
+.main>.slide {
+    width: 100%;
+    height: 600px;
     display: flex;
+    overflow: hidden;
+    
+
+}
+
+.main>.slide>img {
+
+    background-image: cover;
+    background-repeat: no-repeat;
+    
 
 }
 
 
+
+
+/* 하단메뉴 시작 */
+
+.bottomMenue {
+    width: 100%;
+    display: flex;
+
+
+}
+
+.bottomMenue>.menue-Box {
+    width: 600px;
+    height: 126px;
+    margin: auto;
+    display: flex;
+    padding: auto;
+}
+
+.bottomMenue>.menue-Box li {
+    padding: 10px;
+}
+
+.bottomMenue>.menue-Box li:hover {
+    cursor: pointer;
+}
+
+
+.bottomMenue.topBtn>.btn{
+    margin-top: 10%;
+}
+.bottomMenue>.topBtn>.btn>.fas {
+    
+    
+    right: 1rem;
+    cursor: pointer;
+}
