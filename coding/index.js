@@ -1,6 +1,11 @@
+$(document).ready(function () {
 
-$(document).ready(function(){
-  $('.main').slick({
-
+  $(".main>.slide").slick({
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    Infinite: true,
+    pauseOnHover: true,
+    arrows: true
   });
 });
