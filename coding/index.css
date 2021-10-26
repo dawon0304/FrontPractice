@@ -1,3 +1,9 @@
+html {
+    
+    font-family: 'Open Sans', sans-serif;
+  }
+
+
 /* color */
 :root {
     --color-white: #ffffff;
@@ -6,7 +12,7 @@
 
     /* font */
 
-    font-family: 'Roboto', sans-serif;
+    
     --font-large: 48px;
     --font-medium: 28px;
     --font-regular: 18px;
@@ -32,7 +38,7 @@ li {
 /* 탑바 시작 */
 .topBar {
     width: 100%;
-    height: 50px;
+    height: 65px;
     background-color: var(--color-white);
     display: flex;
 }
@@ -53,7 +59,7 @@ li {
 
 .topBar>.menue {
     width: 100%;
-    margin-left: 400px;
+    margin-left: 85vh;
     display: flex;
 
 
@@ -72,11 +78,15 @@ li {
 }
 
 .topBar>.menue>.iconMenue>.icon {
-    margin-left: 40px;
+    margin-left: 5vh;
+}
+.topBar>.menue>.iconMenue>.fas:last-child:last-child{
+    margin-right: 0;
 }
 
-.topBar>.menue>.textMenue>p {
-    font-weight: var(--weight-semi-bold);
+
+.topBar>.menue>.textMenue> p {
+    font-weight: var(--weight-bold);
 }
 
 .topBar>.menue>.textMenue>li {
@@ -87,7 +97,8 @@ li {
 
 .topBar>.menue>.textMenue li:hover {
     cursor: pointer;
-    font-size: large;
+    transform:translateY(-5%);
+    
 }
 
 .topBar>.menue>.iconMenue i {
@@ -97,6 +108,7 @@ li {
 
 .topBar>.menue>.iconMenue i:hover {
     cursor: pointer;
+    transform:translateY(-5%);
 
 }
 
@@ -111,14 +123,15 @@ li {
 
 .main>.slide {
     width: 100%;
-    height: 600px;
+    height: 80vh;
     display: flex;
-    overflow: hidden;
+    
     
 
 }
 
 .main>.slide>img {
+    width: 100%;
 
     background-image: cover;
     background-repeat: no-repeat;
@@ -127,6 +140,25 @@ li {
 }
 
 
+.main> .slide .slick-dots {
+    bottom: 10px;
+}
+
+.main> .slide .slick-prev{
+    left: 2vh;
+    z-index: 10;
+} 
+
+.main> .slide .slick-next{
+    right: 5vh;
+    z-index: 10;
+} 
+
+.main> .slide .slick-prev::before,
+.main> .slide .slick-next::before{
+    font-size: 40px;
+
+}
 
 
 /* 하단메뉴 시작 */
@@ -140,27 +172,61 @@ li {
 
 .bottomMenue>.menue-Box {
     width: 600px;
-    height: 126px;
+    height: 5.5vh;
     margin: auto;
     display: flex;
     padding: auto;
 }
 
+.bottomMenue>.menue-Box>.underline a{
+    text-decoration: none;
+    line-height: 40px;
+    color: rgb(0, 0, 0);
+}
+
+.bottomMenue>.menue-Box>.underline a::after{
+    display: block;
+    content: "";
+    border-bottom: solid 2px rgb(177, 177, 177);
+    transform: scale(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.bottomMenue>.menue-Box>.underline a:hover::after{
+    transform: scaleX(1);
+}
+
+
+
 .bottomMenue>.menue-Box li {
     padding: 10px;
+    
+}
+
+.bottomMenue>.menue-Box>.menue-text{
+    font-weight:var(--weight-bold);
+    font-size :var(--font-regular);
 }
 
 .bottomMenue>.menue-Box li:hover {
     cursor: pointer;
 }
 
+/* Top up Btn */
 
-.bottomMenue.topBtn>.btn{
-    margin-top: 10%;
-}
 .bottomMenue>.topBtn>.btn>.fas {
-    
-    
-    right: 1rem;
     cursor: pointer;
+    position: fixed;
+    right:6.7%;
+    bottom: 5%;
 }
+
+@media only screen and (max-width: 480px) {
+	.bottomMenue>.topBtn>.btn>.fas {
+		visibility: hidden;
+	}
+}
+
+
+
+/* bottom section */
