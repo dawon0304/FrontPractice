@@ -212,9 +212,21 @@ li {
     cursor: pointer;
 }
 
+/* Top up Btn */
+
 .bottomMenue>.topBtn>.btn>.fas {
     cursor: pointer;
     position: fixed;
     right:6.7%;
     bottom: 5%;
 }
+
+@media only screen and (max-width: 480px) {
+	.bottomMenue>.topBtn>.btn>.fas {
+		visibility: hidden;
+	}
+}
+
+
+
+/* bottom section */
