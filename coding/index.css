@@ -1,7 +1,7 @@
 html {
-    
+
     font-family: 'Open Sans', sans-serif;
-  }
+}
 
 
 /* color */
@@ -12,7 +12,7 @@ html {
 
     /* font */
 
-    
+
     --font-large: 48px;
     --font-medium: 28px;
     --font-regular: 18px;
@@ -59,7 +59,7 @@ li {
 
 .topBar>.menue {
     width: 100%;
-    margin-left: 85vh;
+    margin-left: 29%;
     display: flex;
 
 
@@ -80,12 +80,13 @@ li {
 .topBar>.menue>.iconMenue>.icon {
     margin-left: 5vh;
 }
-.topBar>.menue>.iconMenue>.fas:last-child:last-child{
+
+.topBar>.menue>.iconMenue>.fas:last-child:last-child {
     margin-right: 0;
 }
 
 
-.topBar>.menue>.textMenue> p {
+.topBar>.menue>.textMenue>p {
     font-weight: var(--weight-bold);
 }
 
@@ -97,8 +98,8 @@ li {
 
 .topBar>.menue>.textMenue li:hover {
     cursor: pointer;
-    transform:translateY(-5%);
-    
+    transform: translateY(-5%);
+
 }
 
 .topBar>.menue>.iconMenue i {
@@ -108,7 +109,7 @@ li {
 
 .topBar>.menue>.iconMenue i:hover {
     cursor: pointer;
-    transform:translateY(-5%);
+    transform: translateY(-5%);
 
 }
 
@@ -117,7 +118,7 @@ li {
 /* main Slide 시작 */
 
 .main {
-    
+
     background-color: aqua;
 }
 
@@ -125,8 +126,8 @@ li {
     width: 100%;
     height: 80vh;
     display: flex;
-    
-    
+
+
 
 }
 
@@ -135,27 +136,27 @@ li {
 
     background-image: cover;
     background-repeat: no-repeat;
-    
+
 
 }
 
 
-.main> .slide .slick-dots {
+.main>.slide .slick-dots {
     bottom: 10px;
 }
 
-.main> .slide .slick-prev{
+.main>.slide .slick-prev {
     left: 2vh;
     z-index: 10;
-} 
+}
 
-.main> .slide .slick-next{
+.main>.slide .slick-next {
     right: 5vh;
     z-index: 10;
-} 
+}
 
-.main> .slide .slick-prev::before,
-.main> .slide .slick-next::before{
+.main>.slide .slick-prev::before,
+.main>.slide .slick-next::before {
     font-size: 40px;
 
 }
@@ -163,61 +164,64 @@ li {
 
 /* 하단메뉴 시작 */
 
-.bottomMenue {
+.slick-pagination{
+    height: 400px;
+    background-color: #ddd;
+}
+
+.slick-pagination>.menue-box{
     width: 100%;
-    display: flex;
-
-
-}
-
-.bottomMenue>.menue-Box {
-    width: 600px;
-    height: 5.5vh;
-    margin: auto;
-    display: flex;
-    padding: auto;
-}
-
-.bottomMenue>.menue-Box>.underline a{
-    text-decoration: none;
-    line-height: 40px;
-    color: rgb(0, 0, 0);
-}
-
-.bottomMenue>.menue-Box>.underline a::after{
-    display: block;
-    content: "";
-    border-bottom: solid 2px rgb(177, 177, 177);
-    transform: scale(0);
-    transition: transform 250ms ease-in-out;
-}
-
-.bottomMenue>.menue-Box>.underline a:hover::after{
-    transform: scaleX(1);
-}
-
-
-
-.bottomMenue>.menue-Box li {
-    padding: 10px;
+    margin: 0 auto;
+    
+    text-align: center;
     
 }
 
-.bottomMenue>.menue-Box>.menue-text{
-    font-weight:var(--weight-bold);
-    font-size :var(--font-regular);
+.slick-pagination>.menue-box>.menue>a img{
+    width: 20%;
+    
+    
 }
 
-.bottomMenue>.menue-Box li:hover {
-    cursor: pointer;
+.menue-box .slick-dots{
+    width: 500vh;
+    
+    border-top:1px solid #fff;
+    margin:0 auto;
+    position: static;
+    
+    
 }
 
-/* Top up Btn */
+.menue-box .slick-dots li{
+    width: 100%;
+    height: auto;
+    
+}
+
+.menue-box .slick-dots li span:after{
+    display:block;
+    width:100%;
+    height:20px;
+    background-color:red;
+  }
+  
+  .menue-box .slick-dots li > span{
+    display:block;
+    width:100%;
+  }
+  .slider-wrap .slick-dots li button:before{
+    
+  }
+
+
+
+/* Top up Btn
 
 .bottomMenue>.topBtn>.btn>.fas {
     cursor: pointer;
     position: fixed;
-    right:6.7%;
+    right:;
     bottom: 5%;
 }
 
@@ -225,8 +229,13 @@ li {
 	.bottomMenue>.topBtn>.btn>.fas {
 		visibility: hidden;
 	}
-}
+} */
 
 
 
 /* bottom section */
+
+
+
+
+/* https://codepen.io/young-yoi/pen/GRZzvqY */
