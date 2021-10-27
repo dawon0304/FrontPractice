@@ -66,13 +66,13 @@ li {
 }
 
 .topBar>.menue>.textMenue {
-    width: 700px;
+    width: 80%;
     display: flex;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .topBar>.menue>.iconMenue {
-    position: relative;
+    margin-right: 5%;
     margin-top: 18px;
     display: flex;
 }
@@ -164,78 +164,59 @@ li {
 
 /* 하단메뉴 시작 */
 
-.slick-pagination{
-    height: 400px;
-    background-color: #ddd;
-}
-
-.slick-pagination>.menue-box{
+.slider-box-1 {
     width: 100%;
+    height: 700px;
     margin: 0 auto;
     
-    text-align: center;
-    
 }
-
-.slick-pagination>.menue-box>.menue>a img{
-    width: 20%;
-    
-    
+.slider-box-1 > .slick .item {
+    height: 700px;
+    position:relative;
+    overflow:hidden;
 }
-
-.menue-box .slick-dots{
-    width: 500vh;
+.slider-box-1 > .slick .item >a img {
+    position:absolute;
+    margin-top:15%;
+    overflow: hidden;
     
-    border-top:1px solid #fff;
-    margin:0 auto;
-    position: static;
-    
-    
-}
-
-.menue-box .slick-dots li{
+    left: 0;
     width: 100%;
+    
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+.slider-box-1 > .slick .item.slick-current .bg {
+    transform:scale(1);
+}
+.slider-box-1 > .slick .slick-dots{
+    
+    top:0;
+    
+}
+.slider-box-1 > .slick .slick-dots > li {
+    width: auto;
     height: auto;
+    margin: 0;
+}
+
+
+
+.slider-box-1>.slick-slider>.slick-list>.slick-track{
+    margin: 0;
+}
+
+.slider-box-1 > .slick .slick-dots > li > .page-btn {
+    width: 100px;
+    height: 20px;
+    background-color: #afafaf;
+    display: block;
     
 }
 
-.menue-box .slick-dots li span:after{
-    display:block;
-    width:100%;
-    height:20px;
-    background-color:red;
-  }
-  
-  .menue-box .slick-dots li > span{
-    display:block;
-    width:100%;
-  }
-  .slider-wrap .slick-dots li button:before{
-    
-  }
-
-
-
-/* Top up Btn
-
-.bottomMenue>.topBtn>.btn>.fas {
-    cursor: pointer;
-    position: fixed;
-    right:;
-    bottom: 5%;
+.slider-box-1 > .slick .slick-dots > li.slick-active > .page-btn{
+    background-color: #ddd;
 }
-
-@media only screen and (max-width: 480px) {
-	.bottomMenue>.topBtn>.btn>.fas {
-		visibility: hidden;
-	}
-} */
-
-
-
-/* bottom section */
-
-
-
-
-/* https://codepen.io/young-yoi/pen/GRZzvqY */
