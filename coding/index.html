@@ -15,11 +15,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
+    <!-- 스와이퍼 불러오기 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
 
 
 
     <!-- 구글 폰트 불러오기 -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 
 
 
@@ -50,7 +56,7 @@
                 <li class="uerMenue count4">
                     <a href="#" class="height-100p flex flex-ai-c">아이폰</a>
                     <div>
-                        <ul class="flex-jc-c">
+                        <ul>
                             <li> <a href="#">아이폰13</a> </li>
                             <li> <a href="#">아이폰12</a> </li>
                             <li> <a href="#">아이폰11</a> </li>
@@ -99,7 +105,7 @@
                     <a href="#" class="height-100p flex flex-ai-c">스마트기기</a>
                     <div>
                         <ul>
-                            <li> <a href="#">애플전용 주변기기</a> </li>
+                            <li> <a href="#">애플전용주변기기</a> </li>
                             <li> <a href="#">생활 기기</a> </li>
 
                         </ul>
@@ -142,55 +148,22 @@
             <img src="img/main 애플펜슬.jpg" alt="">
         </div>
     </div>
-    <!-- <div class="arrows">
-        <div class="arrows-btn-left">
-            <i class="fas fa-angle-left fa-4x"></i>
-        </div>
-        <div class="arrwos-btn-right">
-            <i class="fas fa-angle-right fa-4x"></i>
-        </div>
-    </div> -->
-
 
     <!-- main 하단 메뉴 시작 -->
-    <div class="slider-box-1">
-        <div class="slick">
-            <div class="slider-contents" data-nav-txt="이 달의 컬러">
-                <div class="item">
-                    <a href="#">
-                        <img src="/img/이달의컬러2.jpg" alt="">
-                    </a>
-                </div>
-            </div>
 
-            <div class="item">
-                <a href="#">
-                    <img src="img/이달의컬러3.jpg" alt="">
-                </a>
-            </div>
-
-            <div class="slider-contents" data-nav-txt="신상품">
-                <div class="item">
-                    <a href="#">
-                        <img src="img/이달의컬러4.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="item">
-                <a href="#">
-                    <img src="img/에어팟3출시기념.jpg" alt="">
-                </a>
-            </div>
-
-
-            <div class="item">
-                <a href="">
-                    <img src="img/아이폰13리뷰.jpg" alt="">
-                </a>
-            </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"><img src="./img/이달의컬러3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/이달의컬러4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/이달의컬러2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/엘라고신상품1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/엘라고신상품2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/엘라고 신상품3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/엘라고 신상품4.jpg.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/엘라고 신상품4.jpg.jpg" alt=""></div>
         </div>
-
+        <div class="swiper-pagination"></div>
     </div>
 
 

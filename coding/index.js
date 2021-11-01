@@ -1,61 +1,32 @@
-$(document).ready(function () {
-
-  $(".main>.slide").slick({
-    dots: true,
-    autoplay: true,
-    autoplaySpeed: 1000,
+$(document).ready(function(){
+  $('.slide').slick({
+    slide:'img',
+    autoplay:true,
     Infinite: true,
+    slidesToShow: 1,
+    speed: 4200,
+    arrows : true,
+    autoplay : true,
+    autoplaySpeed: 400,
     pauseOnHover: true,
-    arrows: true
+    dots: true
+
+
   });
 });
 
-//Up Button
-$(document).ready(function () {
-  $(".bottomMenue>.topBtn>.btn>.fas").hide();
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 50) {
-      $('.bottomMenue>.topBtn>.btn>.fas').fadeIn();
-    } else {
-      $('.bottomMenue>.topBtn>.btn>.fas').fadeOut();
-    }
-  });
-  // scroll body to 0px on click
-  $('.bottomMenue>.topBtn>.btn>.fas').click(function () {
-    $('.bottomMenue>.topBtn>.btn>.fas').tooltip('hide');
-    $('body,html').animate({
-      scrollTop: 0
-    }, 800);
-    return false;
-  });
 
-  $('.bottomMenue>.topBtn>.btn>.fas').tooltip('show');
+$(document).ready(function(){
+  new Swiper(".mySwiper",{
+    slidesPerView: 3,
+    
+    slidesPerGroup:3,
+    loop:true,
+    loopFillGruopWithBlank: true,
+    pagination:{
+      el:".swiper-pagination",
+      clickable: true,
+    },
 
+  });
 });
-
-// 하단페이지
-function SliderBox1__init() {
-  $(".slider-box-1 > .slick").slick({
-      dots: true,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      pauseOnHover: false,
-      slidesToShow: 3,
-      arrows: false,
-      slidesToScroll: 1,
-      dotsClass: "slick-dots",
-      customPaging: function (slick, index) {
-          return '<div class="page-btn"></div>';
-
-          
-      }
-  });
-}
-
-$(function () {
-  SliderBox1__init();
-});
-
-
-// // 참고
-// https://codepen.io/young-yoi/pen/GRZzvqY

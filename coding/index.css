@@ -389,7 +389,7 @@ li {
 .topBar>.menue>.textMenue {
     
     display: flex;
-    margin: 0 auto;
+    margin:0  auto ;
 }
 
 .topBar>.menue>.iconMenue {
@@ -413,17 +413,11 @@ li {
     
 }
 
-.topBar>.menue>.textMenue>li {
-    margin-top: 16px;
-    margin-bottom: 13px;
-    font-weight: var(--weight-regular);
-
-}
-
 .topBar>.menue>.textMenue li:hover {
     cursor: pointer;
     transform: translateY(-10%);
     z-index: 1;
+    
 
 }
 
@@ -448,8 +442,8 @@ li {
 .topBar .menue > div > li > div > ul {
     display: none;
     position: absolute;
-    transform: translateX(0);
-    box-sizing: border-box;
+    transform: translateY(12%);
+    
 }
 
 .topBar .menue > div > li > div::before{
@@ -458,35 +452,41 @@ li {
     background-color: rgba(0,0,0,.2);
     position: absolute;
     left: 0;
-    height: 100px;
+    
     width: 100%;
+    display: none;
     
 }
 
 .topBar .menue > div > li.count4 > div::before{
-    height: 300px;
+   
+    height: 170px;
 }
 
 .topBar .menue > div > li.count6 > div::before{
-    height: 300px;
+    height: 250px;
 }
 .topBar .menue > div > li.count2 > div::before{
-    height: 125px;
+    height: 100px;
 }
 
 
 .topBar .menue > div > li:hover > div::before{
-    
+    margin: 0 auto;
     display:block;
+    
+    
 }
 
 .topBar .menue > div > li:hover > div > ul {
-    display: block;
+    display:block;
+    
     
 }
 
-.topBar .menue > div > li:hover > div > ul > li{
-    margin: 0 auto;
+.topBar .menue > div > li > div > ul > li:hover{
+    color: var(--color-white);
+    
 }
 
 .topBar .menue > div > li > div > ul > li >a {
@@ -551,59 +551,33 @@ li {
 
 /* 하단메뉴 시작 */
 
-.slider-box-1 {
-    width: 100%;
-    height: 700px;
-    margin: 0 auto;
+.swiper{
+    height: 100vh;
+    border: 5px solid #ddd;
+}
+
+.swiper-container>.swiper-wrapper{
+    position: relative;
+    height: 100%;
     
-}
-.slider-box-1 > .slick .item {
-    height: 700px;
-    position:relative;
-    overflow:hidden;
-}
-.slider-box-1 > .slick .item >a img {
-    position:absolute;
-    margin-top:15%;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
     overflow: hidden;
-    
-    left: 0;
-    width: 100%;
-    
-    background-position: center;
-    background-size: cover;
-
 }
 
-
-.slider-box-1 > .slick .item.slick-current .bg {
-    transform:scale(1);
-}
-.slider-box-1 > .slick .slick-dots{
-    
-    top:0;
-    
-}
-.slider-box-1 > .slick .slick-dots > li {
-    width: auto;
-    height: auto;
-    margin: 0;
+.swiper-container>.swiper-slider{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-
-.slider-box-1>.slick-slider>.slick-list>.slick-track{
-    margin: 0;
-}
-
-.slider-box-1 > .slick .slick-dots > li > .page-btn {
-    width: 100px;
-    height: 20px;
-    background-color: #afafaf;
+.swiper-container>.swiper-wrapper>.swiper-slider img{
+    max-width: 60px;
+    height: 100%;
     display: block;
+    object-fit: cover;
     
-}
-
-.slider-box-1 > .slick .slick-dots > li.slick-active > .page-btn{
-    background-color: #ddd;
+    
 }
