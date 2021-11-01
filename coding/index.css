@@ -552,32 +552,57 @@ li {
 /* 하단메뉴 시작 */
 
 .swiper{
-    height: 100vh;
-    border: 5px solid #ddd;
-}
-
-.swiper-container>.swiper-wrapper{
-    position: relative;
-    height: 100%;
+    width: 100%;
     
-    display: flex;
-    transition-property: transform;
-    box-sizing: content-box;
-    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
-.swiper-container>.swiper-slider{
-    text-align: center;
-    display: flex;
-    align-items: center;
+.swiper>.swiper-wrapper{
+    margin-top: 87px;
+}
+
+
+
+.swiper>.swiper-slide{
+    background-position: center;
     justify-content: center;
+    height: calc((100% - 30px) / 2);
 }
 
-.swiper-container>.swiper-wrapper>.swiper-slider img{
-    max-width: 60px;
+.swiper>.swiper-wrapper>.swiper-slide >img{
+    width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
+    z-index: 1;
+}
+
+.swiper > .swiper-pagination{
+    position: absolute;
+    top: 10px;
+    margin: 0 auto;
+}
+
+.swiper > .swiper-pagination > .swiper-pagination-bullet{
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    line-height: 50px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0,0,0,0.2);
+    transition: all 0.4s ease;
     
-    
+}
+
+.swiper> .swiper-pagination > .swiper-pagination-bullet-active{
+    color: #fff;
+    font-size: 18px;
+    background:rgba(43, 42, 42, 0.2);
+    opacity: 3;
 }
