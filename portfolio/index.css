@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    cursor:default;
+}
+
+ul,li{
+    list-style:none;
+}
+
+.button{
+    list-style: none;
+    
+}
+
+
+body{
+    display: block;
+    
+        font-family: 'Outfit',
+        sans-serif;
+        background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+        
+}
+
+
+.main{
+    height: 100%;
+
+}
+
+.main__box{
+    width: 600px;
+    background-color: rgba(255, 255, 255, 0.397);
+    text-align: center;
+    padding: 30px;
+    line-height: 3rem;
+    position: relative;
+    top: 250px;
+    left: 800px;
+    border-radius:25px ;
+}
+
+.inner-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.inner-line{
+    border: 1px solid #fff;
+    
+    height: 0;
+}
+.menue{
+    display: inline-block;
+    margin-top: 15px;
+    
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #4DA0B0 0%, #D39D38 51%, #4DA0B0 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    font-weight: 900;
+    
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
