@@ -1,41 +1,13 @@
-const h1 = document.querySelector("div.hello:first-child h1");
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
 
-function handleTitleClick() {
-    h1.style.color = "blue";    
+
+function onLoginSubmit(event) {
+    event.preventDefault();
+   console.log(loginInput.value);
 }
 
-function handleMouseEnter() {
-    h1.innerText = "Mouse is here!";
-}
 
-function handleMouseLeave() {
-    h1.innerText = "Mouse is gone!";
-}
+loginForm.addEventListener("submit", onLoginSubmit);
 
-function handleWindowResize() {
-    document.body.style.backgroundColor = "tomato";
-    
-}
-
-function handleWindowCopy() {
-    alert("copier!");
-    
-}
-
-function handleWindowOffline() {
-    alert("SOS no WIFI");
-}
-
-function handleWindowOnline() {
-    alert("all good");
-}
-
-h1.addEventListener("click", handleTitleClick);
-h1.addEventListener("mouseenter", handleMouseEnter);
-h1.addEventListener("mouseleave", handleMouseLeave);
-
-
-window.addEventListener("resize", handleWindowResize);
-window.addEventListener("copy", handleWindowCopy);
-window.addEventListener("offline", handleWindowOffline);
-window.addEventListener("online", handleWindowOnline);
+// addEventListener의 첫 번째 인자는 이벤트이고, 이벤트와 관련된 함수에서 그 이벤트에 대한 정보를 함수의 첫 번째 인자에 저장해둔다. 그 정보 안에는 preventDefault라는 메소드가 있는데 이것은 브라우저가 submit 했을 때 새로고침이 안 되게 막는 역할 등을 한다.
