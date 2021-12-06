@@ -1,3 +1,53 @@
+body{
+    font-family: 'Noto Sans KR',
+    sans-serif;
+    font-family: 'Readex Pro',
+    sans-serif;
+    align-content: center;
+    text-align: center;
+}
+
 .hidden{
     display:none;
+}
+#clock{
+    position: absolute;
+    right: 50px;
+    font-size: 50px;
+    color: aliceblue;
+}
+
+form{
+    position: relative;
+    top: 200px;
+}
+
+#greeting {
+    position: relative;
+    top: 200px;
+    font-size: 50px;
+    color: white;
+}
+
+
+#quote{
+    position: relative;
+    top: 500px;
+    
+}
+
+#quote > span{
+    font-size: 20px;
+    font-weight: bolder;
+}
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    opacity: 80%;
 }
