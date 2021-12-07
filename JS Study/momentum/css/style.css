@@ -3,6 +3,7 @@ body{
     sans-serif;
     font-family: 'Readex Pro',
     sans-serif;
+    font-weight: 600;
     align-content: center;
     text-align: center;
 }
@@ -10,36 +11,7 @@ body{
 .hidden{
     display:none;
 }
-#clock{
-    position: absolute;
-    right: 50px;
-    font-size: 50px;
-    color: aliceblue;
-}
 
-form{
-    position: relative;
-    top: 200px;
-}
-
-#greeting {
-    position: relative;
-    top: 200px;
-    font-size: 50px;
-    color: white;
-}
-
-
-#quote{
-    position: relative;
-    top: 500px;
-    
-}
-
-#quote > span{
-    font-size: 20px;
-    font-weight: bolder;
-}
 img {
     position: absolute;
     width: 100%;
