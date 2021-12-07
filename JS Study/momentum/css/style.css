@@ -1,12 +1,23 @@
-body{
-    font-family: 'Noto Sans KR',
-    sans-serif;
-    font-family: 'Readex Pro',
-    sans-serif;
-    font-weight: 600;
-    align-content: center;
-    text-align: center;
+*{
+    margin: 0 auto;
+        font-family: 'Nanum Pen Script',
+        cursive;
+        font-family: 'Readex Pro',
+        sans-serif;
+        font-weight: 600;
 }
+
+ul,li{
+    list-style: none;
+    color: inherit;
+    
+}
+
+form{
+    list-style: none;
+}
+
+
 
 .hidden{
     display:none;
@@ -22,4 +33,74 @@ img {
     bottom: 0px;
     z-index: -1;
     opacity: 80%;
+}
+
+
+body {
+    display: contents;
+    align-content: center;
+    align-items: center;
+}
+
+div{
+    text-align: center;
+    margin-top: 10rem;
+}
+
+#clock{
+    padding: 40px;
+    font-size: 100px;
+    color: whitesmoke;
+}
+form#login-form{
+    padding: 20px;  
+}
+input{
+    width: 400px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    background-color:rgba(247, 246, 246, 0.363);
+    text-align: center;
+}
+
+#greeting{
+    padding: 30px;
+}
+
+#todo-form{
+    padding: 20px 0;
+    
+}
+
+
+#quote{
+    position: fixed;
+    width: 100%;
+    bottom: 100px;
+}
+
+#todo-list {
+    width: 50%;
+    
+}
+
+#todo-list > li{
+    margin: 4px;
+}
+
+#todo-list>li > span{
+    padding: 5px;
+}
+
+#todo-list > li > button {
+    padding: 0;
+    background-color:transparent;
+    border: none;
+}
+
+#todo-list > li > button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 20%;
 }
